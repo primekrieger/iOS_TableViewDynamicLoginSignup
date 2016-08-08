@@ -12,6 +12,16 @@
 		FCFF59CA1D589E6A00DEDA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59C81D589E6A00DEDA06 /* Main.storyboard */; };
 		FCFF59CC1D589E6A00DEDA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59CB1D589E6A00DEDA06 /* Assets.xcassets */; };
 		FCFF59CF1D589E6A00DEDA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59CD1D589E6A00DEDA06 /* LaunchScreen.storyboard */; };
+		FCFF59D81D58A59A00DEDA06 /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59D61D58A59A00DEDA06 /* EmailTableViewCell.swift */; };
+		FCFF59D91D58A59A00DEDA06 /* EmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59D71D58A59A00DEDA06 /* EmailTableViewCell.xib */; };
+		FCFF59DC1D58A62000DEDA06 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59DA1D58A62000DEDA06 /* PasswordTableViewCell.swift */; };
+		FCFF59DD1D58A62000DEDA06 /* PasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59DB1D58A62000DEDA06 /* PasswordTableViewCell.xib */; };
+		FCFF59E01D58A64C00DEDA06 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59DE1D58A64C00DEDA06 /* NameTableViewCell.swift */; };
+		FCFF59E11D58A64C00DEDA06 /* NameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59DF1D58A64C00DEDA06 /* NameTableViewCell.xib */; };
+		FCFF59E41D58A69E00DEDA06 /* LoginButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59E21D58A69E00DEDA06 /* LoginButtonTableViewCell.swift */; };
+		FCFF59E51D58A69E00DEDA06 /* LoginButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59E31D58A69E00DEDA06 /* LoginButtonTableViewCell.xib */; };
+		FCFF59E81D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59E61D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift */; };
+		FCFF59E91D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59E71D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		FCFF59CB1D589E6A00DEDA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCFF59CE1D589E6A00DEDA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCFF59D01D589E6A00DEDA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFF59D61D58A59A00DEDA06 /* EmailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		FCFF59D71D58A59A00DEDA06 /* EmailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailTableViewCell.xib; sourceTree = "<group>"; };
+		FCFF59DA1D58A62000DEDA06 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		FCFF59DB1D58A62000DEDA06 /* PasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordTableViewCell.xib; sourceTree = "<group>"; };
+		FCFF59DE1D58A64C00DEDA06 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		FCFF59DF1D58A64C00DEDA06 /* NameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameTableViewCell.xib; sourceTree = "<group>"; };
+		FCFF59E21D58A69E00DEDA06 /* LoginButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonTableViewCell.swift; sourceTree = "<group>"; };
+		FCFF59E31D58A69E00DEDA06 /* LoginButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginButtonTableViewCell.xib; sourceTree = "<group>"; };
+		FCFF59E61D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupButtonTableViewCell.swift; sourceTree = "<group>"; };
+		FCFF59E71D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupButtonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,16 @@
 				FCFF59CB1D589E6A00DEDA06 /* Assets.xcassets */,
 				FCFF59CD1D589E6A00DEDA06 /* LaunchScreen.storyboard */,
 				FCFF59D01D589E6A00DEDA06 /* Info.plist */,
+				FCFF59D61D58A59A00DEDA06 /* EmailTableViewCell.swift */,
+				FCFF59D71D58A59A00DEDA06 /* EmailTableViewCell.xib */,
+				FCFF59DA1D58A62000DEDA06 /* PasswordTableViewCell.swift */,
+				FCFF59DB1D58A62000DEDA06 /* PasswordTableViewCell.xib */,
+				FCFF59DE1D58A64C00DEDA06 /* NameTableViewCell.swift */,
+				FCFF59DF1D58A64C00DEDA06 /* NameTableViewCell.xib */,
+				FCFF59E21D58A69E00DEDA06 /* LoginButtonTableViewCell.swift */,
+				FCFF59E31D58A69E00DEDA06 /* LoginButtonTableViewCell.xib */,
+				FCFF59E61D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift */,
+				FCFF59E71D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib */,
 			);
 			path = TableViewSignupLogin;
 			sourceTree = "<group>";
@@ -124,7 +154,12 @@
 			files = (
 				FCFF59CF1D589E6A00DEDA06 /* LaunchScreen.storyboard in Resources */,
 				FCFF59CC1D589E6A00DEDA06 /* Assets.xcassets in Resources */,
+				FCFF59E11D58A64C00DEDA06 /* NameTableViewCell.xib in Resources */,
+				FCFF59E91D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib in Resources */,
+				FCFF59E51D58A69E00DEDA06 /* LoginButtonTableViewCell.xib in Resources */,
+				FCFF59D91D58A59A00DEDA06 /* EmailTableViewCell.xib in Resources */,
 				FCFF59CA1D589E6A00DEDA06 /* Main.storyboard in Resources */,
+				FCFF59DD1D58A62000DEDA06 /* PasswordTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFF59DC1D58A62000DEDA06 /* PasswordTableViewCell.swift in Sources */,
+				FCFF59D81D58A59A00DEDA06 /* EmailTableViewCell.swift in Sources */,
 				FCFF59C71D589E6A00DEDA06 /* ViewController.swift in Sources */,
 				FCFF59C51D589E6A00DEDA06 /* AppDelegate.swift in Sources */,
+				FCFF59E01D58A64C00DEDA06 /* NameTableViewCell.swift in Sources */,
+				FCFF59E41D58A69E00DEDA06 /* LoginButtonTableViewCell.swift in Sources */,
+				FCFF59E81D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
