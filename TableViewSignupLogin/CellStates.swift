@@ -26,5 +26,16 @@ let signupState: [CellType] = [
     .EmailTextField,
     .NameTextField,
     .PasswordTextField,
-    .LoginButton
+    .SignupButton
 ]
+
+//let transitionToState = [
+//    "login": [
+//        "add": [2],
+//        "remove": [1, 3]
+//    ],
+//    "signup": [
+//        "add": [1, 3],
+//        "remove": [2]
+//    ]
+//]

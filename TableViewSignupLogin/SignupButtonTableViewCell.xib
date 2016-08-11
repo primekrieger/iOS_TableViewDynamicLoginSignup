@@ -14,14 +14,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRH-VM-mcc">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRH-VM-mcc">
                         <rect key="frame" x="0.0" y="0.5" width="320" height="43.5"/>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="8Ti-te-gPR"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="LoH-Dh-L0g"/>
+                            <constraint firstAttribute="height" constant="43.5" id="eUX-JP-c0P"/>
+                        </constraints>
                         <state key="normal" title="Signup">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Ti-te-gPR"/>
+                                <exclude reference="LoH-Dh-L0g"/>
+                                <exclude reference="eUX-JP-c0P"/>
+                            </mask>
+                        </variation>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="wRH-VM-mcc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2M1-Wj-1Gz"/>
+                    <constraint firstItem="wRH-VM-mcc" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="D5I-nG-NCC"/>
+                    <constraint firstItem="wRH-VM-mcc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kCZ-Rf-l9b"/>
+                    <constraint firstItem="wRH-VM-mcc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="zhj-TA-jlJ"/>
+                </constraints>
             </tableViewCellContentView>
         </tableViewCell>
     </objects>
