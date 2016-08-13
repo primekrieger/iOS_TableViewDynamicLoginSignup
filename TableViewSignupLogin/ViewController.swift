@@ -12,7 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var authTableView: UITableView!
     
-    var isStateLogin = true
+    var currentState = loginState
+    var nextState = signupState
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isStateLogin {
+        if currentState == loginState {
             return loginState.count
         } else {
             return signupState.count
@@ -38,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if isStateLogin {
+        if currentState == loginState {
             return getReusableCell(forType: loginState[indexPath.row])
         } else {
             return getReusableCell(forType: signupState[indexPath.row])
@@ -61,19 +62,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func switchStateTap(sender: UIButton) {
-        let indexPathA1 = [NSIndexPath(forRow: 1, inSection: 0), NSIndexPath(forRow: 3, inSection: 0)]
-        let indexPathA2 = [NSIndexPath(forRow: 2, inSection: 0)]
+        let diff = currentState.diff(nextState)
+        
+        swap(&currentState, &nextState)
         
         authTableView.beginUpdates()
-        if isStateLogin {
-            authTableView.insertRowsAtIndexPaths(indexPathA1, withRowAnimation: .Fade)
-            authTableView.deleteRowsAtIndexPaths(indexPathA2, withRowAnimation: .Fade)
-        } else {
-            authTableView.insertRowsAtIndexPaths(indexPathA2, withRowAnimation: .Fade)
-            authTableView.deleteRowsAtIndexPaths(indexPathA1, withRowAnimation: .Fade)
-        }
-        isStateLogin = !isStateLogin
+        authTableView.insertRowsAtIndexPaths(generateIndexPaths(fromIndexes: diff.addedIndexes) , withRowAnimation: .Fade)
+        authTableView.deleteRowsAtIndexPaths(generateIndexPaths(fromIndexes: diff.removedIndexes), withRowAnimation: .Fade)
         authTableView.endUpdates()
+    }
+    
+    func generateIndexPaths(fromIndexes indexes: [Int]) -> [NSIndexPath] {
+        var indexPaths = [NSIndexPath]()
+        
+        for index in indexes {
+            indexPaths.append(NSIndexPath(forRow: index, inSection: 0))
+        }
+        
+        return indexPaths
     }
 
 }

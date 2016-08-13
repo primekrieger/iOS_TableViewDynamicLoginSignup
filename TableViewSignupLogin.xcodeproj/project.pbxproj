@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCB4BE2E1D5FC1A300B888C4 /* SwiftLCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BE2D1D5FC1A300B888C4 /* SwiftLCS.swift */; };
 		FCFF59C51D589E6A00DEDA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59C41D589E6A00DEDA06 /* AppDelegate.swift */; };
 		FCFF59C71D589E6A00DEDA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF59C61D589E6A00DEDA06 /* ViewController.swift */; };
 		FCFF59CA1D589E6A00DEDA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFF59C81D589E6A00DEDA06 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FCB4BE2D1D5FC1A300B888C4 /* SwiftLCS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLCS.swift; sourceTree = "<group>"; };
 		FCFF59C11D589E6A00DEDA06 /* TableViewSignupLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSignupLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFF59C41D589E6A00DEDA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFF59C61D589E6A00DEDA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				FCFF59E31D58A69E00DEDA06 /* LoginButtonTableViewCell.xib */,
 				FCFF59E61D58A6AD00DEDA06 /* SignupButtonTableViewCell.swift */,
 				FCFF59E71D58A6AD00DEDA06 /* SignupButtonTableViewCell.xib */,
+				FCB4BE2D1D5FC1A300B888C4 /* SwiftLCS.swift */,
 				FCFF59EA1D58B13500DEDA06 /* CellStates.swift */,
 			);
 			path = TableViewSignupLogin;
@@ -176,6 +179,7 @@
 				FCFF59DC1D58A62000DEDA06 /* PasswordTableViewCell.swift in Sources */,
 				FCFF59D81D58A59A00DEDA06 /* EmailTableViewCell.swift in Sources */,
 				FCFF59C71D589E6A00DEDA06 /* ViewController.swift in Sources */,
+				FCB4BE2E1D5FC1A300B888C4 /* SwiftLCS.swift in Sources */,
 				FCFF59C51D589E6A00DEDA06 /* AppDelegate.swift in Sources */,
 				FCFF59E01D58A64C00DEDA06 /* NameTableViewCell.swift in Sources */,
 				FCFF59E41D58A69E00DEDA06 /* LoginButtonTableViewCell.swift in Sources */,
@@ -330,6 +334,7 @@
 				FCFF59D51D589E6A00DEDA06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
