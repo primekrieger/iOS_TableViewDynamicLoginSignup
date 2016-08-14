@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,17 +16,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-l5-suB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <rect key="frame" x="28" y="4.5" width="264" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="HRx-j4-w1t"/>
+                            <constraint firstAttribute="height" constant="35" id="Jr8-ec-j9d"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HRx-j4-w1t"/>
+                            </mask>
+                        </variation>
                     </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="6yG-l5-suB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Djm-Ky-g0K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6yG-l5-suB" secondAttribute="trailing" constant="20" id="TNG-uC-6fl"/>
                     <constraint firstItem="6yG-l5-suB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bZf-fv-SRE"/>
                     <constraint firstItem="6yG-l5-suB" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="fUX-gs-c3e"/>
                     <constraint firstItem="6yG-l5-suB" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="jp5-4W-e8o"/>
                     <constraint firstItem="6yG-l5-suB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yVS-xT-8ql"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="fUX-gs-c3e"/>
+                        <exclude reference="jp5-4W-e8o"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
         </tableViewCell>
     </objects>

@@ -31,19 +31,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if currentState == loginState {
-            return loginState.count
-        } else {
-            return signupState.count
-        }
+        return (currentState == loginState) ? loginState.count : signupState.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if currentState == loginState {
-            return getReusableCell(forType: loginState[indexPath.row])
-        } else {
-            return getReusableCell(forType: signupState[indexPath.row])
-        }
+        return (currentState == loginState) ? getReusableCell(forType: loginState[indexPath.row]) : getReusableCell(forType: signupState[indexPath.row])
     }
     
     func getReusableCell(forType type: CellType) -> UITableViewCell {

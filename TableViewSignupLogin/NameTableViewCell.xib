@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,15 +16,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkX-wb-RBI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <rect key="frame" x="28" y="4.5" width="264" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="IGJ-Gp-A5o"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="jkX-wb-RBI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="27y-2Z-uqx"/>
                     <constraint firstItem="jkX-wb-RBI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BZS-GK-utd"/>
-                    <constraint firstItem="jkX-wb-RBI" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="C8o-ec-dHn"/>
-                    <constraint firstItem="jkX-wb-RBI" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="XSO-7J-1wq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jkX-wb-RBI" secondAttribute="trailing" constant="20" id="aut-aX-xWA"/>
                     <constraint firstItem="jkX-wb-RBI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gYr-az-ewR"/>
                 </constraints>
             </tableViewCellContentView>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,16 +16,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRH-VM-mcc">
-                        <rect key="frame" x="0.0" y="0.5" width="320" height="43.5"/>
+                        <rect key="frame" x="28" y="2.5" width="264" height="40"/>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="320" id="8Ti-te-gPR"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="LoH-Dh-L0g"/>
+                            <constraint firstAttribute="height" constant="40" id="TNP-Ns-PyG"/>
                             <constraint firstAttribute="height" constant="43.5" id="eUX-JP-c0P"/>
                         </constraints>
                         <state key="normal" title="Signup">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="8Ti-te-gPR"/>
@@ -36,9 +43,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="wRH-VM-mcc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2M1-Wj-1Gz"/>
-                    <constraint firstItem="wRH-VM-mcc" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="D5I-nG-NCC"/>
+                    <constraint firstItem="wRH-VM-mcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="QNA-cw-hXW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wRH-VM-mcc" secondAttribute="trailing" constant="20" id="czH-q4-2gA"/>
                     <constraint firstItem="wRH-VM-mcc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kCZ-Rf-l9b"/>
-                    <constraint firstItem="wRH-VM-mcc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="zhj-TA-jlJ"/>
                 </constraints>
             </tableViewCellContentView>
         </tableViewCell>
